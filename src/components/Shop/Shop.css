@@ -1,0 +1,27 @@
+/* this is body of all component */
+.shop-container{
+    
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap:20px;
+}
+
+/* this is for all single component */
+.products-container{
+/* background-color: antiquewhite; */
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap:45px;
+
+}
+
+/* this is right side component for calculation */
+.cart-container{
+background-color: rgb(243, 238, 231);
+/* width: 500px; */
+height: 300px;
+border: 2px solid rgba(250, 215, 217, 0.808);
+border-radius: 5px;
+padding: 20px;
+
+}
