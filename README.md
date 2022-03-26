@@ -1,6 +1,6 @@
 
 ### `play Instrument`
-Live site link: [Live site link] ( https://incredible-genie-1afd28.netlify.app/) 
+Live site link: ( https://incredible-genie-1afd28.netlify.app/) 
 
 description: It's a simple website which name is play instrument. Here has some information and some component about crickt Bats.
 
