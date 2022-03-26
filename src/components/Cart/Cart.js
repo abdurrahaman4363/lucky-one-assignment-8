@@ -3,12 +3,6 @@ import Product from '../Product/Product';
 import './Cart.css'
 
 const Cart = ({cart}) => {
-// console.log(cart);
-/* let name;
-for(const product of cart){
-    name =product.name;
-} */
-
 const productName = cart.map(product =>product.name)
 // console.log(productName);
     return (
