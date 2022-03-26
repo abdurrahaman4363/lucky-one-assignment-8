@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import SelectOne from '../SelectOne/SelectOne';
+
 import './Shop.css';
 
 const Shop = () => {
@@ -24,10 +25,20 @@ const Shop = () => {
         
         
     }
+
+       const [name,setName]=useState([])
    
     const chooseOneItem = () =>{
-        const x=Math.round(Math.random()*10)
-    }
+        
+        const names = cart.map(product=>product.name)
+        console.log(names.length);
+        const x = Math.floor(Math.random()*(names.length-1));
+        let newName = names[x];
+        setName(newName);
+        console.log(newName)
+        console.log(x)
+
+    } 
 
     return (
         <div className='shop-container'>
@@ -45,8 +56,10 @@ const Shop = () => {
                 <div className="cart-container">
                   <Cart cart={cart} 
                   removeCartName={removeCartName}
+                  chooseOneItem={chooseOneItem}
                   ></Cart>
-                  <h1>remove all</h1>
+
+                    <h1>{name}</h1>
                 </div>
         </div>
     );

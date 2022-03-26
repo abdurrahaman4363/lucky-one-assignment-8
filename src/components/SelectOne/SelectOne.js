@@ -1,10 +1,10 @@
 import React from 'react';
 import './SelectOne.css'
 
-const SelectOne = () => {
+const SelectOne = (props) => {
     return (
         <div>
-            <h1>hello</h1>
+            <h1>{props.name}</h1>
         </div>
     );
 };
