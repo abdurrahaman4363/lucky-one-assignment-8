@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
+import SelectOne from '../SelectOne/SelectOne';
 import './Shop.css';
 
 const Shop = () => {
@@ -18,6 +19,15 @@ const Shop = () => {
         const newCart = [...cart,product];
         setCart(newCart);
     }
+    const removeCartName  =()=> {
+        setCart([])
+        
+        
+    }
+   
+    const chooseOneItem = () =>{
+        const x=Math.round(Math.random()*10)
+    }
 
     return (
         <div className='shop-container'>
@@ -25,13 +35,18 @@ const Shop = () => {
                    {
                        products.map(product => <Product 
                        key={product.id}
+                
                        product={product}
                        handleAddToCart={handleAddToCart}
                        ></Product>)
                    }
+            
                 </div>
                 <div className="cart-container">
-                  <Cart cart={cart}></Cart>
+                  <Cart cart={cart} 
+                  removeCartName={removeCartName}
+                  ></Cart>
+                  <h1>remove all</h1>
                 </div>
         </div>
     );
