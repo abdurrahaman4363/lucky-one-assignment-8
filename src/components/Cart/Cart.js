@@ -13,7 +13,7 @@ const productName = cart.map(product =>product.name)
                      productName.map(name => <h4>{name}</h4>)
                  }
                  
-                  <button style={{color:'lawngreen', borderRadius: 5,margin:'5px'}}>CHOOSE ONE FOR ME</button><br />
+                  <button style={{color:'blue', borderRadius: 5,margin:'5px'}}>CHOOSE ONE FOR ME</button><br />
                   <button style={{color:'fuchsia',borderRadius: 5,margin:'5px'}}>REMOVE</button>
         </div>
     );
