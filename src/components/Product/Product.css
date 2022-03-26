@@ -16,6 +16,12 @@
     background-color: rgb(252, 217, 225);
     border: none;
     border-radius: 0px 0px 8px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-cart .btn-text{
+    margin-right: 10px;
 }
 .btn-cart:hover{
     background-color: blanchedalmond;
