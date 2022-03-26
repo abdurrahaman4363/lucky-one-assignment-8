@@ -1,7 +1,7 @@
 
 ### `play Instrument`
 
-### `Live site link: https://incredible-genie-1afd28.netlify.app/`
+### [Live site link:]( https://incredible-genie-1afd28.netlify.app/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
